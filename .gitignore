@@ -42,4 +42,4 @@ jspm_packages
 
 #mongodb
 mongodb/*
-mongodb/data
+mongodb/data/*
