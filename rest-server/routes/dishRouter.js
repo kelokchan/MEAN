@@ -69,14 +69,14 @@ dishRouter.route('/:dishId')
 });
 
 dishRouter.route('/:dishId/comments')
-.get(function (req, res, next) {
-	Dishes.findById(req.params.dishId, function (err, dish) {
-		if (err) throw err;
-		res.json(dish.comments);
+	.get(function (req, res, next) {
+		Dishes.findById(req.params.dishId, function (err, dish) {
+			if (err) throw err;
+			res.json(dish.comments);
 
-	});
+		});
 
-})
+	})
 
 .post(function (req, res, next) {
 	Dishes.findById(req.params.dishId, function (err, dish) {

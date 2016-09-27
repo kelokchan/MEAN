@@ -57,6 +57,7 @@ var dishSchema = new Schema({
 
 // the schema is useless so far
 // we need to create a model using it
+// first argument responsible for collection name, put third argument to force a collection name
 var Dishes = mongoose.model('Dish', dishSchema);
 
 // make this available to our Node applications
